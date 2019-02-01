@@ -5,8 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UniOvpn"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="UniOvpn" Height="369" Width="603.4" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize" Loaded="loader" Closing="closing">
     <Grid>
-        
+        <TabControl x:Name="tabControl" HorizontalAlignment="Center" Margin="10">
+            <TabItem Header="Config &amp; Log" Height="22" VerticalAlignment="Top">
+                <Grid Background="#FFE5E5E5">
+                    <TextBox x:Name="config" Height="30" VerticalAlignment="Top" Margin="10,9,67,0" VerticalContentAlignment="Center" Padding="0" IsReadOnly="True" IsUndoEnabled="False"/>
+                    <Button x:Name="import" Content="Import" VerticalAlignment="Top" Margin="0,10,10,0" Height="29" Click="import_Click" HorizontalAlignment="Right" Width="52" RenderTransformOrigin="-0.327,0.867"/>
+                    <TextBox x:Name="response" IsReadOnly="True" Margin="10,44,10,0" FontFamily="Consolas" VerticalScrollBarVisibility="Auto" IsUndoEnabled="False" HorizontalAlignment="Center" Width="551" HorizontalScrollBarVisibility="Auto" Height="171" VerticalAlignment="Top"/>
+                    <Button x:Name="connect" Content="Connect" Margin="10,0,10,10" RenderTransformOrigin="0.493,2.65" VerticalAlignment="Bottom" Height="37" Click="connect_Click"/>
+                    <Label x:Name="s_label" Content="Sent:" HorizontalAlignment="Left" Margin="17,216,0,48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Label x:Name="r_label" Content="Received:" HorizontalAlignment="Center" Margin="257,216,255,0" HorizontalContentAlignment="Center" Width="59" Height="26" VerticalAlignment="Top"/>
+                    <Label x:Name="sent_l" Content="0 B" HorizontalAlignment="Left" Margin="58,216,0,0" Height="26" VerticalAlignment="Top"/>
+                    <Label x:Name="received_l" Content="0 B" HorizontalAlignment="Left" Margin="321,216,0,0" Height="26" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Credits">
+                <Grid Background="#FFE5E5E5">
+                    <RichTextBox x:Name="richTextBox" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Consolas" Block.LineHeight="1" Margin="10" Width="551" IsReadOnly="True">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="UniOvpn v0.0.2"/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="Mod by Dexter Cellona Banawon (fb.me/theMovesFever)"/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="PHC : JustPlaying (www.phcorner.net/members/575916)"/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="Discord : JustPlaying"/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="Special thanks to my UDPTeam."/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="For bugs just contact me using the above details."/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="Note: Only for my UDPTeam for now but will be released to the public, soon."/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="Still updating ... Stay tuned!"/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run/>
+                            </Paragraph>
+                            <Paragraph>
+                                <Run Text="Copyright(R) 2019"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Label x:Name="timerx" Content="" VerticalAlignment="Top" Margin="0,10,10,0" HorizontalAlignment="Right" FontWeight="Bold" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Fixed" FontFamily="Consolas"/>
     </Grid>
 </Window>

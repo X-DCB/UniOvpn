@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniOvpn", "UniOvpn\UniOvpn.csproj", "{3B4DEF6E-3393-4A06-A3E9-19EA52E19925}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "c_timer", "..\DLLs\c_timer\c_timer.csproj", "{273E339B-A72F-460F-BFAC-B8BE2D52AE17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "net_stat", "..\DLLs\net_stat\net_stat.csproj", "{10420DF3-6F47-4074-BEC5-18D744AD9E37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{3B4DEF6E-3393-4A06-A3E9-19EA52E19925}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B4DEF6E-3393-4A06-A3E9-19EA52E19925}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B4DEF6E-3393-4A06-A3E9-19EA52E19925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273E339B-A72F-460F-BFAC-B8BE2D52AE17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273E339B-A72F-460F-BFAC-B8BE2D52AE17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273E339B-A72F-460F-BFAC-B8BE2D52AE17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273E339B-A72F-460F-BFAC-B8BE2D52AE17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10420DF3-6F47-4074-BEC5-18D744AD9E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10420DF3-6F47-4074-BEC5-18D744AD9E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10420DF3-6F47-4074-BEC5-18D744AD9E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10420DF3-6F47-4074-BEC5-18D744AD9E37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
