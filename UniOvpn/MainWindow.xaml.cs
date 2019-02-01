@@ -239,7 +239,7 @@ namespace UniOvpn
             sendCommand("hold release");
             sendCommand("state on");
             /*sendCommand("config shit-1.ovpn");
-            sendCommand("auth-user-pass creds.txt");*/
+            sendCommand("auth-user-pass creds.txt")*/
         }
         private void connect_Click(object sender, RoutedEventArgs e)
         {
